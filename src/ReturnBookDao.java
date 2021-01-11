@@ -16,8 +16,8 @@ public class ReturnBookDao {
 			ps.setInt(2,studentid);
 			status=ps.executeUpdate();
 			}
+			con.close()
 			
-			con.close();
 		}catch(Exception e){System.out.println(e);}
 		return status;
 	}
