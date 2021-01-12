@@ -14,7 +14,7 @@ public static int save(String callno,String name,String author,String publisher,
 		ps.setString(4,publisher);
 		ps.setInt(5,quantity);
 		status=ps.executeUpdate();
-		con.close();
+		con.close(); 
 	}catch(Exception e){System.out.println(e);}
 	return status;
 }
